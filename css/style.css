@@ -13,21 +13,24 @@ a {
 	color: #FFF;
 	cursor: pointer;
 }
-p, td, th {
+p, td, th, h1, h2, h3, h4, h5, h6{
 	font-family: "WenQuanYi Micro Hei", "Arial Unicode MS", "Microsoft JhengHei";
-	font-size: 1.2em;
 	color: #16F1F5;
 	text-shadow: 0px 0px 6px #16F1F5;
+}
+p, td, th {
+	font-size: 1.2em;
 	text-indent: 2em;
 	line-height: 1.5em;
 }
 h1 {
 	margin-top: 0px;
-	color: #FF0;
+	color: #16F1F5;
+	text-shadow: 0px 0px 6px #16F1F5;
 }
 h1 span {
 	font-size: 1.2em;
-	background-color: #FF0;
+	background-color: #16F1F5;
 	color: #222;
 	padding: 0 0.5% 0 0.5%;
 }
@@ -48,11 +51,25 @@ section {
 .odd {
 	background-color: #333;
 }
+td, th{
+	font-family: gfont;
+	font-size: 1.2em;
+	color: #16F1F5;
+	text-shadow: 0px 0px 6px #16F1F5;
+}
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
+	border: 0px;
+}
+li {
+	font-weight: bold;
+}
+.thumbnail{
+	background-color: #16F1F5;
+	box-shadow: 0px 0px 6px #16F1F5;
 	border: 0px;
 }
