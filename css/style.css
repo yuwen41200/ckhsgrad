@@ -4,6 +4,7 @@ body {
 	background: -o-radial-gradient(#444, #111);
 	background: -moz-radial-gradient(#444, #111);
 	background: radial-gradient(#444, #111);
+	background: url(../img/bg.jpg);
 	padding-top: 70px;
 }
 .navbar-custom {
