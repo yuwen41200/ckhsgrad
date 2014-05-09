@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$("#sche_table tr:odd").addClass("odd");
+	$('.scroll-pane').jScrollPane();
 });
 
 function page_scroll(dest) {
@@ -19,7 +20,8 @@ function init() {
 
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(25.0300, 121.515), // CK
-
+        //unable to use scrollwheel
+        scrollwheel: false,
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{'featureType':'water','stylers':[{'color':'#021019'}]},
