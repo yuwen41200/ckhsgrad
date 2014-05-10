@@ -43,6 +43,7 @@ section, video {
 }
 section {
 	margin-top: 70px;
+	opacity: 0;
 }
 .well {
 	background-color: #222;
@@ -50,10 +51,6 @@ section {
 }
 .odd {
 	background-color: #333;
-}
-.hide {
-	/* out of view */
-	/* http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrollin */
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
