@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$(".animation").slideUp("slow");
 	$("#sche_table tr:odd").addClass("odd");
 	var elem_list = document.getElementsByTagName("section");
 	var is_visible = 0;
