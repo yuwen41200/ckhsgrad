@@ -5,14 +5,16 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		if((is_visible!=elem_list.length) && (in_viewport(elem_list[is_visible]))) {
 			$(elem_list[is_visible]).animate({
+				marginLeft: '10%',
 				opacity: '1'
-			}, 500);
+			}, 250);
 			is_visible++;
 		}
 		if((is_visible!=0) && (!in_viewport(elem_list[is_visible-1]))) {
 			$(elem_list[is_visible-1]).animate({
+				marginLeft: '100%',
 				opacity: '0'
-			}, 500);
+			}, 250);
 			is_visible--;
 		}
 	});
