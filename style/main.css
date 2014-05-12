@@ -72,8 +72,9 @@ header {
 	background-color: rgba(0,233,255,0.9);
 }
 .well {
-	background-color: #222;
-	border: 0px;
+	background-color: #151515;
+	border-width: 5px;
+	border-color: #16F1F5;
 }
 .odd {
 	background-color: #333;
