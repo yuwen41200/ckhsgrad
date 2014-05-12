@@ -4,7 +4,7 @@ body {
 	background: -o-radial-gradient(#444, #111);
 	background: -moz-radial-gradient(#444, #111);
 	background: radial-gradient(#444, #111);
-	background: url(../img/bg.jpg);
+	background-image: url(../img/back.png);
 	padding-top: 70px;
 	overflow-x: hidden;
 }
@@ -59,13 +59,17 @@ header {
 	background-color: #F60;
 }
 .option {
+	height: 100vh;
 	position: relative;
 	top: -71px;
 	left: 0px;
-	background-color: #660;
+	background-image: url(../img/opt-light.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .navbar-custom {
-	background-color: rgba(0,233,255,0.5);
+	background-color: rgba(0,233,255,0.9);
 }
 .well {
 	background-color: #222;
