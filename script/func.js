@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$(".animation").slideUp("slow");
-	$("#sche_table tr:odd").addClass("odd"); // differ schedule odd and even rows
+	$(".animation").delay(5000).slideUp("slow");
+	$("#sche_table tr:odd").addClass("odd");
 	var elem_list = document.getElementsByTagName("section");
 	var is_visible = 0;
 	$(window).scroll(function() {
@@ -32,7 +32,6 @@ function in_viewport(elem) {
 	var elem_bottom = elem_top + $(elem).height();
 	return (window_bottom > elem_top+200);
 }
-//google maps
 google.maps.event.addDomListener(window, 'load', init);
 function init() {
 	var mapOptions = {

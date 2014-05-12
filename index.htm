@@ -7,21 +7,16 @@
 	<meta name="keywords" content="CK, Chien Kuo, 建國中學, 建中, 66th, graduation, 畢業典禮, 畢典">
 	<meta name="author" content="CKEISC32nd Yu-wen Pwu, INFOR25th Chia-sheng Chen">
 	<title>建國中學六十六屆畢業典禮</title>
-	<link href="img/favicon(1).ico" rel="icon" type="image/icon" />
+	<link href="img/favicon.ico" rel="icon" type="image/icon" />
 	<link href="style/bootstrap.css" rel="stylesheet" type="text/css" />
-	<link href="style/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
 	<link href="style/main.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>
-	<script type="text/javascript" src="script/jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-	<script type="text/javascript" src="script/func.js"></script>
 	<script type="text/javascript" src="excolo/js/jquerySlider.min.js"></script>
-
+	<script type="text/javascript" src="script/func.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-	<div style="position:"
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<a class="navbar-brand" onclick="page_scroll('body')">Brand</a>
@@ -37,8 +32,40 @@
 		</div>
 	</div>
 	</nav>
-	<header class="animation"><h1>我是動畫我是動畫~</h1></header>
-	<header class="option"></header>
+	<header class="animation">
+		<svg height="100%" width="100%">
+			<rect x="20" y="10" height="100" width="100" style="stroke:#ff0000; fill:#0000ff">
+				<animate id="E" attributeName="y" attributeType="XML" from="10"  to="200" begin="0s" dur="250ms" fill="freeze" repeatCount="1" />
+			</rect>
+			<rect x="120" y="10" height="100" width="100" style="stroke:#ff0000; fill:#0000ff">
+				<animate id="N" attributeName="y" attributeType="XML" from="10"  to="200" begin="E.end" dur="250ms" fill="freeze" repeatCount="1" />
+			</rect>
+			<rect x="220" y="10" height="100" width="100" style="stroke:#ff0000; fill:#0000ff">
+				<animate id="L" attributeName="y" attributeType="XML" from="10"  to="200" begin="N.end" dur="250ms" fill="freeze" repeatCount="1" />
+			</rect>
+			<rect x="320" y="10" height="100" width="100" style="stroke:#ff0000; fill:#0000ff">
+				<animate id="I" attributeName="y" attributeType="XML" from="10"  to="200" begin="L.end" dur="250ms" fill="freeze" repeatCount="1" />
+			</rect>
+			<rect x="420" y="10" height="100" width="100" style="stroke:#ff0000; fill:#0000ff">
+				<animate id="G" attributeName="y" attributeType="XML" from="10"  to="200" begin="I.end" dur="250ms" fill="freeze" repeatCount="1" />
+			</rect>
+			<rect x="520" y="10" height="100" width="100" style="stroke:#ff0000; fill:#0000ff">
+				<animate id="H" attributeName="y" attributeType="XML" from="10"  to="200" begin="G.end" dur="250ms" fill="freeze" repeatCount="1" />
+			</rect>
+			<rect x="620" y="10" height="100" width="100" style="stroke:#ff0000; fill:#0000ff">
+				<animate id="T" attributeName="y" attributeType="XML" from="10"  to="200" begin="H.end" dur="250ms" fill="freeze" repeatCount="1" />
+			</rect>
+			<rect x="720" y="10" height="100" width="100" style="stroke:#ff0000; fill:#0000ff">
+				<animate id="e" attributeName="y" attributeType="XML" from="10"  to="200" begin="T.end" dur="250ms" fill="freeze" repeatCount="1" />
+			</rect>
+			<rect x="820" y="10" height="100" width="100" style="stroke:#ff0000; fill:#0000ff">
+				<animate id="n"attributeName="y" attributeType="XML" from="10"  to="200" begin="e.end" dur="250ms" fill="freeze" repeatCount="1" />
+			</rect>
+		</svg>
+	</header>
+	<header class="option">
+		<h1>我是選單我是選單~</h1>
+	</header>
 	<section id="video" class="well well-lg">
 		<h1><span>V</span>IDEO</h1>
 		<video class="img-rounded" controls preload="auto" src="http://techslides.com/demos/sample-videos/small.mp4"></video>
