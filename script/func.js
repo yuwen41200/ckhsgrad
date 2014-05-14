@@ -32,6 +32,12 @@ function in_viewport(elem) {
 	var elem_bottom = elem_top + $(elem).height();
 	return (window_bottom > elem_top+200);
 }
+function text_effect(id, text) {
+	change_text = text.slice(0, ++counter);
+	document.getElementById(id).innerHTML = change_text;
+	if(change_text === text) return;
+	setTimeout(text_effect, 80);
+}
 google.maps.event.addDomListener(window, 'load', init);
 function init() {
 	var mapOptions = {

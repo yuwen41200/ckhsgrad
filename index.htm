@@ -12,7 +12,7 @@
 	<link href="style/main.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-	<script type="text/javascript" src="excolo/js/jquerySlider.min.js"></script>
+	<script type="text/javascript" src="excolo/js/jquery.excoloSlider.min.js"></script>
 	<script type="text/javascript" src="script/func.js"></script>
 </head>
 <body>
@@ -34,7 +34,14 @@
 	</nav>
 	<header class="animation">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 1024 768" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
-		<g>
+		<defs>
+			<filter id="shadow">
+				<feOffset result="OffsetOut" in="SourceGraphic" dx="0" dy="0" />
+				<feGaussianBlur result="BlurOut" in="OffsetOut" stdDeviation="20" />
+				<feBlend in="SourceGraphic" in2="BlurOut" mode="normal" />
+			</filter>
+		</defs>
+		<g filter="url(#shadow)">
 			<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M493.849,531.398c-24.186-1.152-48.734-2.945-72.475-4.679l-9.545-0.695
 				c-1.207-0.087-1.968-0.924-3.021-2.082c-0.502-0.553-1.127-1.24-1.939-2.009l-0.75-0.711l12.493-37.628l-16.16-7.535
 				l14.522-36.478c-13.929-8.421-14.079-9.589-9.294-26.355c1.745-6.116,3.498-12.178,5.25-18.239
@@ -320,6 +327,9 @@
 				c1.189-0.014,2.322-0.02,3.404-0.02c3.431,0,6.307,0.06,8.845,0.112c1.902,0.039,3.545,0.073,5.021,0.073
 				c8.357,0,11.985-1.329,15.692-8.795c1.786-3.598,1.047-6.274,0.112-7.885c-2.07-3.569-7.176-5.618-15.176-6.088
 				C828.23,333.904,821.192,333.667,814.764,333.667L814.764,333.667z"/>
+			<rect x="532" y="482" rx="20" ry="20" height="45" width="460" style="fill:#FFF;stroke:#000;stroke-width:0"/>
+			<text x="544" y="517" style="font-size:36;fill:#000;stroke:#000;stroke-width:0">建國中學六十六屆畢業典禮</text>
+			<animateMotion from="0,0" to="0,-600" dur="5s" fill="freeze"/>
 		</g>
 		</svg>
 	</header>
