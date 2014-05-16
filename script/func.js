@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	$(".animation").delay(5000).slideUp("slow");
+	$(window).load(function() {
+		$(".animation").delay(500).slideUp("slow");
+	});
 	$("#sche_table tr:odd").addClass("odd");
 	var elem_list = document.getElementsByTagName("section");
 	var is_visible = 0;
