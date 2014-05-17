@@ -21,6 +21,29 @@ $(document).ready(function() {
 			is_visible--;
 		}
 	});
+
+	var jssor_options = {
+		$FillMode: 2, 
+	    $AutoPlay: true,
+	    $ArrowKeyNavigation: true,
+
+	    $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+    };
+	var jssor_slider1 = new $JssorSlider$("slider1_container", jssor_options);
+	function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+    ScaleSlider();
+
+    if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+        $(window).bind('resize', ScaleSlider);
+    }
+
 });
 function page_scroll(dest) {
 	$("html, body").animate({

@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--FUUUUUUUUUUUUck you popup panel
+i spent bunch of days working on it and i got nothing, nooooooooothing!!!!
+i'll never try to use it anymore on this website
+                by Chia-sheng Chen on 2014/5/18 at 00:27am after abandoning popup sliders
+                   and switch to display those sliders easilier-->
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -10,11 +15,9 @@
 	<link href="img/favicon.ico" rel="icon" type="image/icon" />
 	<link href="style/bootstrap.css" rel="stylesheet" type="text/css" />
 	<link href="style/main.css" rel="stylesheet" type="text/css" />
-	<link href="style/reveal.css" rel="stylesheet" type="text/css" />	<!--popup_windows-->
 	<script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-	<script type="text/javascript" src="excolo/js/jquery.excoloSlider.min.js"></script>
-	<script type="text/javascript" src="script/jquery.reveal.js"></script><!--popup_windows-->
+	<script type="text/javascript" src="script/jssor.slider.mini.js"></script>
 	<script type="text/javascript" src="script/func.js"></script>
 </head>
 <body>
@@ -28,6 +31,7 @@
 				<li><a onclick="page_scroll('#video')">Video</a></li>
 				<li><a onclick="page_scroll('#about')">About</a></li>
 				<li><a onclick="page_scroll('#schedule')">Schedule</a></li>
+				<li><a onclick="page_scroll('#activities')">Activities</a></li>
 				<li><a onclick="page_scroll('#contact')">Contact</a></li>
 				<li><a onclick="page_scroll('#map')">Map</a></li>
 			</ul>
@@ -191,39 +195,52 @@
 			<div class="col-md-6 col-xs-12">
 				<table class="table" id="sche_table">
 					<tr><th>時間</th><th>活動內容</th></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
-					<tr><td>17:00~17:45</td><td>開場影片</td></tr>
+					<tr><td>16:30-17:50</td><td>畢業生校園巡禮、進場</td></tr>
+					<tr><td>17:50-18:00</td><td>開場表演</td></tr>
+					<tr><td>18:00-18:15</td><td>開場影片</td></tr>
+					<tr><td>18:15-18:20</td><td>開場唱校歌</td></tr>
+					<tr><td>18:20-18:50</td><td>來賓致詞</td></tr>
+					<tr><td>18:50-20:30</td><td>頒獎</td></tr>
+					<tr><td>20:30-20:45</td><td>在校生致詞、畢業生致詞</td></tr>
+					<tr><td>20:45-20:55</td><td>頒發畢業證書</td></tr>
+					<tr><td>20:55-21:05</td><td>祝福儀式</td></tr>
+					<tr><td>21:05-21:15</td><td>教師致詞、感恩時間</td></tr>
+					<tr><td>21:15-21:20</td><td>畢業歌演奏</td></tr>
+					<tr><td>21:20-21:50</td><td>禮成退場</td></tr>
 				</table>
+				<p style="text-align:right">*可能因場地或天候因素而更改行程</p>
+			</div>
+		</div>
+	</section>
+	<section id="activities" class="well well-lg">
+		<h1><span>A</span>CTIVITIES</h1>
+		<div class="row-fluid">
+			<div class="col-md-6 col-xs-12">
+				<div class="well well-sm">
+				<div id="slider1_container" style="position: relative; margin: 0 0;
+        top: 0px; left: 0px; width: 1300px; height: 500px; ";>
+	        		<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; ">
+			            <div><img u="image" src="img/logo.jpg" /></div>
+			            <div><img u="image" src="img/logo.jpg" /></div>
+			            <div><img u="image" src="img/logo.jpg" /></div>
+			            <div><img u="image" src="img/logo.jpg" /></div>
+			            <div><img u="image" src="img/logo.jpg" /></div>
+			            <div><img u="image" src="img/logo.jpg" /></div>
+			            <div><img u="image" src="img/logo.jpg" /></div>
+			            <div><img u="image" src="img/logo.jpg" /></div>
+			            <div><img u="image" src="img/logo.jpg" /></div>
+			            <div><img u="image" src="img/logo.jpg" /></div>
+	        		</div>
+	  			</div>
+	  			</div>
 			</div>
 			<div class="col-md-6 col-xs-12">
-				<div class="row-fluid">
-					<div class="col-md-6 col-xs-12">
-						<div class="thumbnail" id="act_1"><img src="img/300px-200px.png"></div>
-						<p>「下一夜，下一頁」便是2013年建國中學高三同學們所票選的畢業典禮主題。6月5日晚上踏入校園，您會穿過一部巨大的書冊，彷彿跨越時空來到另一個天地。</p>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<div class="thumbnail" id="act_2"><img src="img/300px-200px.png"></div>
-						<p>「下一夜，下一頁」便是2013年建國中學高三同學們所票選的畢業典禮主題。6月5日晚上踏入校園，您會穿過一部巨大的書冊，彷彿跨越時空來到另一個天地。</p>
-					</div>
-				</div>
-				<div class="row-fluid">
-					<div class="col-md-6 col-xs-12">
-						<div class="thumbnail" id="act_3"><img src="img/300px-200px.png"></div>
-						<p>「下一夜，下一頁」便是2013年建國中學高三同學們所票選的畢業典禮主題。6月5日晚上踏入校園，您會穿過一部巨大的書冊，彷彿跨越時空來到另一個天地。</p>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<div class="thumbnail" id="act_4"><img src="img/300px-200px.png"></div>
-						<p>「下一夜，下一頁」便是2013年建國中學高三同學們所票選的畢業典禮主題。6月5日晚上踏入校園，您會穿過一部巨大的書冊，彷彿跨越時空來到另一個天地。</p>
-					</div>
-				</div>
+			<p>如同去年，今年的畢業歌〈我想說的那些日子〉，仍由學生社團獨力創作，歌詞道盡年少輕狂、堅持理想卻漸感迷惘，回顧從前多所悔恨，最後不禁要問：「我們有成為當初想成為的人嗎？」步入人生新頁前我們自我期許，未來除了追尋自我實現外，也不可忘記關懷社會；延續傳統，我們在畢典前夕舉辦畢業紀念Ｔ恤義賣活動，並將透過畢典中的服務學習儀式，在胡庭碩學長的見證下，把義賣所得全數捐予世界展望會，為不圓滿的世界，聊盡一份棉薄之力，也矢志從今爾後，力行實踐。</p>
+			</div>
+		<div class="row-fluid">
+			<div class="col-md-6 col-xs-12">
+			</div>
+			<div class="col-md-6 col-xs-12">
 			</div>
 		</div>
 	</section>

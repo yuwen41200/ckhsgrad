@@ -4,7 +4,7 @@ body {
 	background: -o-radial-gradient(#444, #111);
 	background: -moz-radial-gradient(#444, #111);
 	background: radial-gradient(#444, #111);
-	background-image: url(../img/background.png);
+	background: url(../img/background.svg) ;
 	padding-top: 70px;
 	overflow-x: hidden;
 }
@@ -75,6 +75,7 @@ header {
 	background-color: #151515;
 	border-width: 0px;
 	box-shadow: 0px 0px 6px #16F1F5, 0px 0px 6px #16F1F5;
+	overflow: hidden;
 }
 .odd {
 	background-color: #333;
