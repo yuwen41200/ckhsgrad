@@ -99,3 +99,12 @@ header {
 	fill: #000;
 	fill-opacity: 0.2;
 }
+.img-popup{
+	height: 70vh;
+	width: auto;
+}
+.p-popup{
+	color: #151515;
+	font-size: 1.2em;
+}
+#popup-1{display:none;}
