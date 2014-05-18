@@ -21,29 +21,6 @@ $(document).ready(function() {
 			is_visible--;
 		}
 	});
-
-	var jssor_options = {
-		$FillMode: 2, 
-	    $AutoPlay: true,
-	    $ArrowKeyNavigation: true,
-
-	    $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-    };
-	var jssor_slider1 = new $JssorSlider$("slider1_container", jssor_options);
-	function ScaleSlider() {
-                var bodyWidth = document.body.clientWidth;
-                if (bodyWidth)
-                    jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 1920));
-                else
-                    window.setTimeout(ScaleSlider, 30);
-            }
-
-    ScaleSlider();
-
-    if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-        $(window).bind('resize', ScaleSlider);
-    }
-
 });
 function page_scroll(dest) {
 	$("html, body").animate({
@@ -57,11 +34,15 @@ function in_viewport(elem) {
 	var elem_bottom = elem_top + $(elem).height();
 	return (window_bottom > elem_top+200);
 }
+var counter = 0;
 function text_effect(id, text) {
 	change_text = text.slice(0, ++counter);
 	document.getElementById(id).innerHTML = change_text;
 	if(change_text === text) return;
 	setTimeout(text_effect, 80);
+}
+function pop(elem) {
+	$(elem).bPopup({modalColor: '#0FF'});
 }
 google.maps.event.addDomListener(window, 'load', init);
 function init() {
@@ -90,30 +71,3 @@ function init() {
 	});
 	marker.setMap(map);
 }
-function pop(elem){
-	$(elem).bPopup({modalColor: '#0FF'});
-
-}
-    // Semicolon (;) to ensure closing of earlier scripting
-    // Encapsulation
-    // $ is assigned to jQuery
-/*    ;(function($) {
-
-         // DOM Ready
-        $(function() {
-
-            // Binding a click event
-            // From jQuery v.1.7.0 use .on() instead of .bind()
-            $('#my-button').on('click', function(e) {
-
-                // Prevents the default action to be triggered. 
-                e.preventDefault();
-
-                // Triggering bPopup when click event is fired
-                $('#element_to_pop_up').bPopup({modalColor: '#0FF'});
-
-            });
-
-        });
-
-    })(jQuery);*/
