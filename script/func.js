@@ -21,6 +21,24 @@ $(document).ready(function() {
 			is_visible--;
 		}
 	});
+	$("#opt-video").click(function() {
+		page_scroll("#video");
+	});
+	$("#opt-about").click(function() {
+		page_scroll("#about");
+	});
+	$("#opt-schedule").click(function() {
+		page_scroll("#schedule");
+	});
+	$("#opt-activities").click(function() {
+		page_scroll("#activities");
+	});
+	$("#opt-contact").click(function() {
+		page_scroll("#contact");
+	});
+	$("#opt-map").click(function() {
+		page_scroll("#map");
+	});
 });
 function page_scroll(dest) {
 	$("html, body").animate({
@@ -64,7 +82,7 @@ function init() {
 			{'elementType':'labels.text.fill','stylers':[{'color':'#ffffff'}]},
 			{'elementType':'labels.text.stroke','stylers':[{'color':'#000000'},{'lightness':13}]}]
 	};
-	var mapElement = document.getElementById('map');
+	var mapElement = document.getElementById('googlemap');
 	var map = new google.maps.Map(mapElement, mapOptions);
 	var marker = new google.maps.Marker({
 		position: new google.maps.LatLng(25.0302, 121.5125),

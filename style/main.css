@@ -24,25 +24,30 @@ p, td, th {
 h1 {
 	margin-top: 0px;
 	margin-bottom: 20px;
+	letter-spacing: 0.1em;
 }
 h1 span {
 	font-size: 1.2em;
 	background-color: #16F1F5;
 	color: #222;
+	letter-spacing: 0em;
 	padding: 0 0.5% 0 0.5%;
+	margin-right: 0.5%;
 }
-section, video {
+section {
 	margin: 0 10% 0 10%;
 	width: 80%;
 	height: auto;
-}
-section {
 	margin-top: 70px;
 	margin-left: 100%;
 	opacity: 0;
 }
 section a {
 	cursor: pointer;
+}
+video {
+	width: 100%;
+	height: auto;
 }
 header {
 	width: 100%;
@@ -60,7 +65,7 @@ header {
 	position: relative;
 	top: -71px;
 	left: 0px;
-	background-image: url(../img/opt-light.jpg);
+	background-image: url(../img/opt_background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -85,11 +90,6 @@ header {
 .table > tfoot > tr > td {
 	border: 0px;
 }
-.thumbnail {
-	background-color: #16F1F5;
-	box-shadow: 0px 0px 6px #16F1F5;
-	border: 0px;
-}
 .motion {
 	stroke: #16F1F5;
 	stroke-width: 2.5px;
@@ -100,6 +100,15 @@ header {
 	font-family: "WenQuanYi Micro Hei", "Arial Unicode MS", "Microsoft JhengHei";
 	font-size: 2.6em;
 }
+.svgopt {
+	fill: #202020;
+	fill-opacity: 0.6;
+	pointer-events: all;
+	cursor: pointer;
+}
+.svgopt:hover {
+	fill-opacity: 0;
+}
 .popup {
 	display: none;
 }
@@ -107,12 +116,9 @@ header {
 	margin: 0 auto;
 }
 .img-popup {
-	height: 70vh;
+	height: 90vh;
 	width: auto;
 }
-.p-popup {
-	color: #151515;
-	font-size: 1.2em;
+.navbar .brand > img {
+	max-height: 50px;
 }
-.navbar .brand > img { max-height: 50px; }
-
