@@ -114,3 +114,5 @@ header {
 	color: #151515;
 	font-size: 1.2em;
 }
+.navbar .brand > img { max-height: 51px; }
+
