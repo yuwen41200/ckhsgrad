@@ -1,8 +1,8 @@
 if(navigator.appName == "Microsoft Internet Explorer") {
-	var regexp  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+	var regexp = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
 	if(regexp.exec(navigator.userAgent) != null)
 		var version = parseFloat(RegExp.$1);
-	if((typeof version != "undefined") && (version<=8.0))
+	if((typeof version != "undefined") && (version <= 8.0))
 		window.location.replace("plain.htm");
 }
 $(document).ready(function() {
