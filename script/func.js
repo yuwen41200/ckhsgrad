@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$(window).load(function() {
-		$(".animation").delay(12000).fadeOut(1000);
+		$(".animation").delay(8000).fadeOut(1000);
 	});
 	$("#sche_table tr:odd").addClass("odd");
 	var elem_list = document.getElementsByTagName("section");
