@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(window).load(function() {
 		$(".animation").delay(8000).fadeOut(1000);
 	});
-	$("#sche_table tr:odd").addClass("odd");
+	$("#sche-table tr:odd").addClass("odd");
 	var elem_list = document.getElementsByTagName("section");
 	var is_visible = 0;
 	$(window).scroll(function() {

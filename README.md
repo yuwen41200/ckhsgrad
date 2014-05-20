@@ -7,8 +7,5 @@ Taipei Municipal Chienkuo High School
 
 To Do List:
 
-1. fix section table width
-2. fix section contact elements
-3. fix header option color
-4. add text effect on header option
-5. use Modernizr to check browser compatibility
+1. add text effect on header option
+2. use Modernizr to check browser compatibility
