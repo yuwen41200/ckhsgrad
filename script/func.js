@@ -60,9 +60,10 @@ function in_viewport(elem) {
 	return (window_bottom > elem_top+200);
 }
 var counter = 0;
-function text_effect(id, text) {
-	change_text = text.slice(0, ++counter);
-	document.getElementById(id).innerHTML = change_text;
+var text = "漫步在黃昏的校園，白日的笑語此刻暫歇。就在今夜，我尚是主人，下一夜，已是來客。有朝到了懷舊的年歲，往事已如中世紀般遙遠。歷經騎士行誼、古堡火龍，旋將翻開無限可能的下一頁。只是剎那，我按在指尖…";
+function text_effect() {
+	var change_text = text.slice(0, ++counter);
+	document.getElementById("effect").childNodes[0].innerHTML = change_text;
 	if(change_text === text) return;
 	setTimeout(text_effect, 80);
 }

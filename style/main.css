@@ -77,6 +77,12 @@ header {
 #cont-table td:nth-child(1) {
 	width: 25%;
 }
+#effect {
+	position: absolute;
+	top: 60%;
+	left: 72%;
+	width: 20%;
+}
 .animation {
 	position: absolute;
 	top: 0px;
