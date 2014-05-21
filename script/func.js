@@ -4,9 +4,10 @@ if(navigator.appName == "Microsoft Internet Explorer") {
 		var version = parseFloat(RegExp.$1);
 	if((typeof version != "undefined") && (version <= 8.0))
 		window.location.replace("plain.htm");
+	$(".animation").hide(0);
 }
 $(document).ready(function() {
-	if($(window).width() <= 480) {
+	if($(window).width() <= 640) {
 		$(".animation").hide(0);
 		$(".option").hide(0);
 		$("section").css({"margin-left":"10%","opacity":"1"});
@@ -15,7 +16,7 @@ $(document).ready(function() {
 		$(".animation").delay(8000).fadeOut(1000);
 	});
 	$("#sche-table tr:odd").addClass("odd");
-	if($(window).width() > 480) {
+	if($(window).width() > 640) {
 		var elem_list = document.getElementsByTagName("section");
 		var is_visible = 0;
 		$(window).scroll(function() {
@@ -35,20 +36,50 @@ $(document).ready(function() {
 			}
 		});
 	}
+	$("#opt-video").hover(function() {
+		$("#nav-video").addClass("nav-hover");
+	}, function() {
+		$("#nav-video").removeClass("nav-hover");
+	});
 	$("#opt-video").click(function() {
 		page_scroll("#video");
+	});
+	$("#opt-about").hover(function() {
+		$("#nav-about").addClass("nav-hover");
+	}, function() {
+		$("#nav-about").removeClass("nav-hover");
 	});
 	$("#opt-about").click(function() {
 		page_scroll("#about");
 	});
+	$("#opt-schedule").hover(function() {
+		$("#nav-schedule").addClass("nav-hover");
+	}, function() {
+		$("#nav-schedule").removeClass("nav-hover");
+	});
 	$("#opt-schedule").click(function() {
 		page_scroll("#schedule");
+	});
+	$("#opt-activities").hover(function() {
+		$("#nav-activities").addClass("nav-hover");
+	}, function() {
+		$("#nav-activities").removeClass("nav-hover");
 	});
 	$("#opt-activities").click(function() {
 		page_scroll("#activities");
 	});
+	$("#opt-contact").hover(function() {
+		$("#nav-contact").addClass("nav-hover");
+	}, function() {
+		$("#nav-contact").removeClass("nav-hover");
+	});
 	$("#opt-contact").click(function() {
 		page_scroll("#contact");
+	});
+	$("#opt-map").hover(function() {
+		$("#nav-map").addClass("nav-hover");
+	}, function() {
+		$("#nav-map").removeClass("nav-hover");
 	});
 	$("#opt-map").click(function() {
 		page_scroll("#map");
@@ -78,7 +109,7 @@ function text_effect() {
 	setTimeout(text_effect, 80);
 }
 function pop(elem) {
-	if($(window).width() > 480) {
+	if($(window).width() > 640) {
 		$(elem).bPopup({modalColor: '#0FF'});
 	}
 }
