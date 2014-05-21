@@ -81,7 +81,6 @@ header {
 	position: absolute;
 	top: 60%;
 	left: 72%;
-	width: 20%;
 }
 .animation {
 	position: absolute;
@@ -142,5 +141,5 @@ header {
 	width: auto;
 }
 .navbar .brand > img {
-	max-height: 50px;
+	max-height: 46px;
 }
