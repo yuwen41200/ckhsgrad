@@ -36,6 +36,14 @@ $(document).ready(function() {
 			}
 		});
 	}
+	$("#opt-news").hover(function() {
+		$("#nav-news").addClass("nav-hover");
+	}, function() {
+		$("#nav-news").removeClass("nav-hover");
+	});
+	$("#opt-news").click(function() {
+		page_scroll("#news");
+	});
 	$("#opt-video").hover(function() {
 		$("#nav-video").addClass("nav-hover");
 	}, function() {
