@@ -92,6 +92,9 @@ $(document).ready(function() {
 	$("#opt-map").click(function() {
 		page_scroll("#map");
 	});
+	$("#opt-secret").click(function() {
+		pop("#popup-secret");
+	});
 });
 function page_scroll(dest) {
 	$("html, body").animate({

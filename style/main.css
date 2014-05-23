@@ -142,6 +142,10 @@ header {
 	height: 90vh;
 	width: auto;
 }
+.p-popup {
+	text-indent: 0em;
+	margin-left: 20px;
+}
 .navbar .brand > img {
 	max-height: 46px;
 }
