@@ -7,6 +7,8 @@ if(navigator.appName == "Microsoft Internet Explorer") {
 	$(".animation").hide(0);
 }
 $(document).ready(function() {
+
+
 	if($(window).width() <= 640) {
 		$(".animation").hide(0);
 		$(".option").hide(0);
