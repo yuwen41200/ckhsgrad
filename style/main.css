@@ -84,6 +84,10 @@ header {
 	top: 60%;
 	left: 72%;
 }
+#news p {
+	text-indent: 0em;
+	margin-left: 60px;
+}
 .animation {
 	position: absolute;
 	top: 0px;
